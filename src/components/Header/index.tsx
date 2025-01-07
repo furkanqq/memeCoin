@@ -26,22 +26,22 @@ export default function Header({ type = 'default' }: { type?: 'auth' | 'default'
   return (
     <div
       className={cn(
-        'fixed top-0 flex items-center justify-center w-full h-20 transition-all z-50 bg-transparent py-9',
+        'fixed top-0 flex items-center justify-center w-full h-20 transition-all z-50 bg-backgroundColor sm:bg-transparent py-9',
         {
-          'shadow bg-backgroundColor': scrollHeight,
+          'sm:shadow sm:bg-backgroundColor': scrollHeight,
         }
       )}
     >
-      <div className="container h-full flex items-center justify-between">
+      <div className="container h-full flex items-center justify-center sm:justify-between">
         <Link href={'/'} className="">
           <Image src={'/meme_text.png'} alt="Meme Coin" width={200} height={120} />
         </Link>
-        <div className="w-fit flex gap-5">
+        <div className="hidden sm:flex w-fit gap-5">
           <Link
             className={
               !scrollHeight
-                ? 'border border-solid border-primaryColor bg-backgroundColor text-primaryColor px-3 py-1 rounded text-[14px] font-medium'
-                : 'border border-solid border-primaryColor bg-primaryColor text-white px-3 py-1 rounded text-[14px] font-medium'
+                ? 'border border-solid border-primaryColor bg-backgroundColor text-primaryColor text-[14px] font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300'
+                : 'border border-solid border-primaryColor bg-primaryColor text-white text-[14px] font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300'
             }
             href={'#roadmap'}
           >
@@ -50,13 +50,33 @@ export default function Header({ type = 'default' }: { type?: 'auth' | 'default'
           <Link
             className={
               !scrollHeight
-                ? 'border border-solid border-primaryColor bg-backgroundColor text-primaryColor px-3 py-1 rounded text-[14px] font-medium'
-                : 'border border-solid border-primaryColor bg-primaryColor text-white px-3 py-1 rounded text-[14px] font-medium'
+                ? 'border border-solid border-primaryColor bg-backgroundColor text-primaryColor text-[14px] font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300'
+                : 'border border-solid border-primaryColor bg-primaryColor text-white text-[14px] font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300'
             }
             href={'#about'}
           >
             About Us
           </Link>
+          <Link
+            className={
+              !scrollHeight
+                ? 'border border-solid border-primaryColor bg-backgroundColor text-primaryColor text-[14px] font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300'
+                : 'border border-solid border-primaryColor bg-primaryColor text-white text-[14px] font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300'
+            }
+            href={'#revolution'}
+          >
+            Revolution
+          </Link>
+          {/* <Link
+            className={
+              !scrollHeight
+                ? 'border border-solid border-primaryColor bg-backgroundColor text-primaryColor text-[14px] font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300'
+                : 'border border-solid border-primaryColor bg-primaryColor text-white text-[14px] font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300'
+            }
+            href={'#revolution'}
+          >
+            Contact Us
+          </Link> */}
         </div>
       </div>
     </div>

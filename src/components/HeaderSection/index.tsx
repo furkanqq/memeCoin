@@ -4,7 +4,7 @@ import { Container } from '../Container';
 
 const HeaderSection = () => {
   return (
-    <div className="relative isolate overflow-hidden bg-primaryColor py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden bg-primaryColor py-24 sm:py-32" id="revolution">
       <Image
         src={'/meme_text.png'}
         alt="pattern"
