@@ -4,9 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-import { IconLogin } from '@/assets/IconLogin';
 import { cn } from '@/utils/cn';
-import Button from '../Button';
 
 export default function Header({ type = 'default' }: { type?: 'auth' | 'default' | 'landing' }) {
   const [scrollHeight, setScrollHeight] = useState(false);

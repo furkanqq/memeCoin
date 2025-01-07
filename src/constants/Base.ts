@@ -1,7 +1,7 @@
 export const Base = {
   App: {
     Slogan: 'Match with your soulmate',
-    Name: 'Blind Lover',
+    Name: 'Momey Coin',
   },
   Key: {
     AuthToken: 'x-auth-token',

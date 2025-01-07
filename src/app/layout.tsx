@@ -3,13 +3,11 @@ import { Metadata } from 'next';
 
 import './globals.css';
 
-import { Aguafina_Script, Caveat, Happy_Monkey, Inter, Jersey_15, Montserrat, Permanent_Marker } from 'next/font/google';
+import { Happy_Monkey } from 'next/font/google';
 
 import { ThemeProvider } from '@/components/ThemeProvider';
 
 const montserrat = Happy_Monkey({ subsets: ['latin'], weight: ['400'] });
-
-const inter = Inter({ subsets: ['cyrillic'] });
 
 export const metadata: Metadata = {
   title: 'MemeCoin',

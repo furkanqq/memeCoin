@@ -1,5 +1,3 @@
-import { BrowserRouter } from 'react-router-dom';
-
 import { cn } from '@/utils/cn';
 import { Footer } from '../Footer';
 import Header from '../Header';

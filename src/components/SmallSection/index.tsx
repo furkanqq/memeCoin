@@ -1,8 +1,5 @@
 import Image from 'next/image';
 
-import { IconArrowRight } from '@/assets/IconArrowRight';
-import { Container } from '../Container';
-
 const SmallSection = () => {
   return (
     <div className="items-center justify-center flex flex-wrap bg-transparent rounded-lg mt-32" id="about">
