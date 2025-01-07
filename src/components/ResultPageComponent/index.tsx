@@ -27,7 +27,7 @@ export default function ResultPageComponent({
 }) {
   return (
     <Container className="h-[100vh] flex justify-center items-center">
-      <div className=" flex flex-col gap-6 w-full p-4 text-center justify-center items-center rounded-lg sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <div className=" flex flex-col gap-6 w-full p-4 text-center justify-center items-center rounded-lg sm:p-8 bg-gray-800 border-gray-700">
         <div className="flex justify-center items-center">
           <Image
             src={imgUrl ? imgUrl : ''}
@@ -36,6 +36,7 @@ export default function ResultPageComponent({
             height={imgHeight ? imgHeight : 180}
           />
         </div>
+        <div className="text-white text-6xl font-extrabold">404</div>
         <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">{title}</h5>
         <p className="mb-5 md:w-96 text-base text-gray-500 sm:text-lg dark:text-gray-400">{desc}</p>
         <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">

@@ -5,7 +5,7 @@ export default function ErrorNotFound() {
   return (
     <AppLayout type="auth">
       <ResultPageComponent
-        imgUrl={'/meme_text1.png'}
+        imgUrl={'/meme_text.png'}
         title={"Oops! Looks like you're lost."}
         desc={
           "We couldn't find the page you were searching for. It might have been removed or is temporarily unavailable."

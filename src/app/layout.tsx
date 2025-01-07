@@ -17,7 +17,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head></head>
+      <head>
+        <link rel="icon" type="image/png" href="/momey.webp" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/momey.webp" />
+        <link rel="shortcut icon" href="/momey.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/momey.webp" />
+        <link rel="manifest" href="/momey.webp" />
+      </head>
       <body className={montserrat.className}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
