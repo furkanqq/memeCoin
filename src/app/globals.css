@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-color: 0, 0, 0;
+  --background-color: 255, 255, 255;
+  --primary-color: 251, 198, 18;
+  --primary-disabled-color: 241, 255, 135;
+  --input-background-color: 214, 214, 214;
+  --placeholder-color: 114, 114, 114;
+  --border-color: 196, 196, 194;
+  --red-color: 205, 28, 24;
+  --green-color: 46, 111, 64;
+  --orange-color: 255, 165, 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: white;
+  background-image: url('/monkeyPattern.png');
+  background-position: center;
+  background-size: contain;
+  color: rgb(var(--foreground-color));
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+body::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.03); /* Hafif beyaz noise */
+  background-image: repeating-radial-gradient(circle, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  opacity: 0.5; /* Noise yoğunluğu */
+  z-index: 1;
+  pointer-events: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
