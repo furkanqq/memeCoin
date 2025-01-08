@@ -23,7 +23,7 @@ export default function Banner() {
             {`Everyone's Favorite Momey Coin!`}
           </h1>
           <div
-            className="p-2 border border-solid border-primaryColor text-xs sm:text-lg text-center rounded-lg cursor-pointer"
+            className="p-2 border border-solid border-primaryColor text-xs sm:text-lg text-center rounded-lg cursor-pointer overflow-auto"
             onClick={handleCopy}
           >
             {copied ? (
