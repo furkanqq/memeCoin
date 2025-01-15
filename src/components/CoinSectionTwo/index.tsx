@@ -29,15 +29,6 @@ export const MemeCoinSectionTwo: React.FC = () => {
           redefining what it means to invest.
         </p>
 
-        <div className="flex justify-center space-x-4">
-          {/* <button className="bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300">
-              Join the Community
-            </button> */}
-          <button className="bg-primaryColor text-white font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300">
-            Learn More
-          </button>
-        </div>
-
         <div className="pt-10 flex justify-center space-x-6 cursor-pointer">
           <img
             src="/momey.webp"
